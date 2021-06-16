@@ -1,0 +1,6 @@
+#!/bin/bash
+FILE="/home/ubuntu/terraform-challenge/run-your-own-dojo/apis/api-1/config/config.json"
+
+cat $FILE
+sed -i 's/__API2_IP_ADDRESS__/${ip}/' "$FILE"  
+cat $FILE
